@@ -8,4 +8,4 @@ RUN apk update && \
     apk add python && \
     rm -rf /var/cache/apk/*
 
-RUN npm install --global gatsby --no-optional gatsby
+RUN npm install --global gatsby 
