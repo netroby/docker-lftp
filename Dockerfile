@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM node:alpine
 
 RUN apk --no-cache add lftp ca-certificates openssh
 
@@ -8,4 +8,4 @@ RUN apk update && \
     apk add python && \
     rm -rf /var/cache/apk/*
 
-RUN npm install --global gatsby --no-optional gatsby@1.9 
+RUN npm install --global gatsby --no-optional gatsby
